@@ -16,11 +16,14 @@ export const typeDefs = `#graphql
   name: String!
   verified: Boolean!
  }
- 
+
  type Query {
   reviews: [Review]
+  review(id:ID!): Review
   games: [Game]
+  game(id:ID!): Game
   authors: [Author]
+  author(id:ID!): Author
  }
 `;
 // 5 types: Int, Float, String, Boolean, ID
