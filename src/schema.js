@@ -16,12 +16,12 @@ export const typeDefs = `#graphql
   name: String!
   verified: Boolean!
  }
+ 
  type Query {
   reviews: [Review]
   games: [Game]
   authors: [Author]
  }
 `;
-
 // 5 types: Int, Float, String, Boolean, ID
 // Query: gatekeeps the entrypoint into the graph, prevent user from entering from anywhere
